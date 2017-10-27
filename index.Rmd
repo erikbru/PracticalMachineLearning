@@ -3,7 +3,9 @@ title: Practical Machine Learning; Predicting the manner in which Weight Lifting
 author: "Erik Bruin"
 output: html_document
 ---
+
 ##Executive Summary
+
 This project was carried out as the final assignment of the Coursera course "Practical Machine Learning". The purpose is to predict the manner in which weight lifting exercises were done. Key findings were:
 
 * Of the original data set with the respons variable "classe" with 159 possible predictors, 52 predictors/features were selected to build the prediction model on.
@@ -14,6 +16,7 @@ This project was carried out as the final assignment of the Coursera course "Pra
 The online versions of this document can be found at [GitHub](https://github.com/erikbru/practicalmachinelearning), and a fully rendered html document can be found at [GitHub Pages](https://erikbru.github.io/practicalmachinelearning/).
 
 ##Introduction
+
 This project was carried out as the final assignment of the coursera course "Practical Machine Learning". The purpose is to predict the manner in which weight lifting exercises were done. The website with additional information says: Six young health participants were asked to perform one set of 10 repetitions of the Unilateral Dumbbell Biceps Curl in five different fashions: exactly according to the specification (Class A), throwing the elbows to the front (Class B), lifting the dumbbell only halfway (Class C), lowering the dumbbell only halfway (Class D) and throwing the hips to the front (Class E).
 
 In order to determine in which fashion a particular exercise was performed, 4 technical devices (accelerometers) were used which record so called "quantified self movements". The goal is to predict the correct class of execution based on data from these accelerometers on the belt, forearm, arm, and dumbell of 6 participants. They were asked to perform barbell lifts correctly and incorrectly in 5 different ways. More information is available from the website here: http://groupware.les.inf.puc-rio.br/har (see the section on the Weight Lifting Exercise Dataset). 
@@ -32,6 +35,7 @@ opts_chunk$set(cache=TRUE) #Set-up Knitr in such a way that it only reruns chunk
 
 
 ## Data exploration and feature selection
+
 Note to the "technical" reader: As coming across pieces of code is likely to distract business people from the results of the analysis, I chose to put all code chunks in an Appendix. However, the these chunks of code are run at the appropriate places in this document (using reference labels). In addition, as cross validation and expected out of sample errors are specifically mentioned as review criteria, I have highlighted these answers in bold.
 
 ```{r ref.label="loadData", echo=FALSE, results='hide'}
@@ -137,6 +141,7 @@ The last Quiz in the Practical Machine Learning course consists of predicting th
 I was very pleased to see that after submitting these predictions on Coursera, I had a 100% correct score!
 
 ##Appendix
+
 The code chunks printed in this appendix are actually run at the appropriate places in this analysis (using reference labels).
 
 Loading libraries.
