@@ -52,7 +52,7 @@ qplot(training$classe, main="Figure 1: Distribution of Observations in the Train
 
 
 ```{r runFeature, ref.label="featureSelection", echo=FALSE}
-#67 columns with NAs
+#run featureSelection
 ```
 
 My first step in selecting usable features for prediction is to investigate which of the 160 variables contain missing values (stored as NA (Not Available)). The result is that 67 variables contain NA values.  Actually, all these variables have 19216 NAs out of a total of 19622 observations. As almost 98% of values being unavailable means that these variables cannot possibly be good predictors, I am excluding them from the analysis. This leaves me with 93 variables.
