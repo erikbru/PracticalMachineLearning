@@ -4,7 +4,7 @@ author: "Erik Bruin"
 output: html_document
 ---
 
-##Executive Summary
+## Executive Summary
 
 This project was carried out as the final assignment of the Coursera course "Practical Machine Learning". The purpose is to predict the manner in which weight lifting exercises were done. Key findings were:
 
@@ -15,7 +15,7 @@ This project was carried out as the final assignment of the Coursera course "Pra
 
 The online versions of this document can be found at [GitHub](https://github.com/erikbru/practicalmachinelearning), and a fully rendered html document can be found at [GitHub Pages](https://erikbru.github.io/practicalmachinelearning/).
 
-##Introduction
+## Introduction
 
 This project was carried out as the final assignment of the coursera course "Practical Machine Learning". The purpose is to predict the manner in which weight lifting exercises were done. The website with additional information says: Six young health participants were asked to perform one set of 10 repetitions of the Unilateral Dumbbell Biceps Curl in five different fashions: exactly according to the specification (Class A), throwing the elbows to the front (Class B), lifting the dumbbell only halfway (Class C), lowering the dumbbell only halfway (Class D) and throwing the hips to the front (Class E).
 
@@ -131,7 +131,7 @@ varImpPlot(modelRF$finalModel, n.var=10, main=" Top 10 of most important variabl
 
 GINI measures the average gain of purity by splits of a given variable. The Gini index of a pure node (consisting of 1 class) is zero, and the maximum Gini index is reached when all classes in a node have equal probability (impure). So purity increases when the Gini decreases, and therefore the variable with the highest mean decrease in Gini is the most important one (in this case roll_belt). Below roll_belt, you can see that there is a group of 6 variables that are also substantially more important than the remaining 45 predictors, as there is a gap in the MeanDecreaseGini between row 7 and 8.
 
-##Predictions on the testing set
+## Predictions on the testing set
 
 The last Quiz in the Practical Machine Learning course consists of predicting the classe of the 20 observations that were provided in the testing set, using your own prediction algorithm. As I have managed to get a 99.3% accuracy on the test set (not the testing set, but on the 40% 'test' cut of the training set), predictions on this (small) set of new data provided should be good.
 ```{r runQuiz4, ref.label="testingQuiz4", echo=FALSE}
@@ -140,7 +140,7 @@ The last Quiz in the Practical Machine Learning course consists of predicting th
 
 I was very pleased to see that after submitting these predictions on Coursera, I had a 100% correct score!
 
-##Appendix
+## Appendix
 
 The code chunks printed in this appendix are actually run at the appropriate places in this analysis (using reference labels).
 
